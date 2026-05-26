@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Lora", Georgia, serif;
+  --font-display: "Cinzel", "Times New Roman", serif;
+  --font-sans: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-carnation-red: #BC0000;
+  --color-navy-gray: #1A1A1A;
+  --color-brand-green: #006633;
+}
+
+/* Custom scrollbar and antique editorial print texture styling */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F9F7F2;
+  border-left: 2px solid #1A1A1A;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #BC0000;
+  border: 2px solid #1A1A1A;
+  border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #006633;
+}
+
+body {
+  background-color: #F9F7F2;
+  color: #1A1A1A;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+/* Brutalist Bold Typography UI Helpers */
+.brutalist-card {
+  background-color: #ffffff;
+  border: 3px solid #1A1A1A;
+  border-radius: 4px;
+  box-shadow: 6px 6px 0px 0px #1A1A1A;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.brutalist-card-green {
+  background-color: #ffffff;
+  border: 3px solid #1A1A1A;
+  border-radius: 4px;
+  box-shadow: 6px 6px 0px 0px #006633;
+}
+
+.brutalist-card-red {
+  background-color: #ffffff;
+  border: 3px solid #1A1A1A;
+  border-radius: 4px;
+  box-shadow: 6px 6px 0px 0px #BC0000;
+}
+
+.brutalist-interactive:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 8px 8px 0px 0px #1A1A1A;
+}
+
+.brutalist-button {
+  background-color: #ffffff;
+  border: 2px solid #1A1A1A;
+  border-radius: 2px;
+  color: #1A1A1A;
+  font-weight: 700;
+  text-transform: uppercase;
+  box-shadow: 3px 3px 0px 0px #1A1A1A;
+  transition: all 0.1s ease-in-out;
+}
+
+.brutalist-button:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0px 0px #1A1A1A;
+  background-color: #F9F7F2;
+}
+
+.brutalist-button:active {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0px 0px #1A1A1A;
+}
+
+.brutalist-header-line {
+  border-bottom: 4px double #1A1A1A;
+}
+
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 15s linear infinite;
+}
+
+@keyframes tape-scroll {
+  0% { transform: scaleX(1); }
+  50% { transform: scaleX(1.04); }
+  100% { transform: scaleX(1); }
+}
+
+.animate-tape-scroll {
+  animation: tape-scroll 2s ease-in-out infinite;
+}

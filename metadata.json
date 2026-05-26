@@ -1,0 +1,6 @@
+{
+  "name": "25 de Abril: A Revolução dos Cravos",
+  "description": "Um arquivo histórico interativo sobre a Revolução de 25 de Abril de 1974 em Portugal, incluindo cronograma detalhado, capitães do movimento, galeria e testemunhos.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
